@@ -1,0 +1,27 @@
+<LoginScreen>:
+    orientation: 'vertical'
+    padding: 20
+    spacing: 10
+
+    Label:
+        text: "Login"
+        font_size: '24sp'
+        size_hint: (1, 0.2)
+
+    TextInput:
+        id: email_input
+        hint_text: "E-mail"
+        multiline: False
+        size_hint: (1, 0.2)
+
+    TextInput:
+        id: password_input
+        hint_text: "Password"
+        password: True
+        multiline: False
+        size_hint: (1, 0.2)
+
+    Button:
+        text: "Log In"
+        size_hint: (1, 0.2)
+        on_press: root.check_credentials()
